@@ -4,4 +4,8 @@ namespace GH\Workflows;
 
 class Dummy
 {
+    public function foo(): bool
+    {
+        return true;
+    }
 }
