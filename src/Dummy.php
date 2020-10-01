@@ -16,6 +16,6 @@ class Dummy
 
     public function fooBar():  bool
     {
-        return false;
+        return false ;
     }
 }
