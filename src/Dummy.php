@@ -14,8 +14,8 @@ class Dummy
         return "some text here  "   ;
     }
 
-    public function fooBar(): bool
+    public function fooBar():  bool
     {
-        return false ;
+        return false;
     }
 }
