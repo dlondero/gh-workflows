@@ -11,7 +11,7 @@ class Dummy
 
     public function bar(): string
     {
-        return "some text here  "   ;
+        return "some text here  "  ;
     }
 
     public function fooBar():  bool
