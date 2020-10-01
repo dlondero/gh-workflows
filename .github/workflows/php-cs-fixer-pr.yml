@@ -16,15 +16,8 @@ jobs:
         with:
           ref: ${{ github.head_ref }}
           repository: ${{ github.event.pull_request.head.repo.full_name }}
-        env:
-          GIT_TRACE: 1
-          GIT_CURL_VERBOSE: 1
 
       - uses: php-actions/composer@v2
 
       - name: Run php-cs-fixer
-        run: ./vendor/bin/php-cs-fixer fix
-
-      - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: Apply php-cs-fixer changes
+        run: ./vendor/bin/php-cs-fixer fix --dry-run
