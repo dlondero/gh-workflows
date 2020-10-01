@@ -8,4 +8,9 @@ class Dummy
     {
         return true ;
     }
+
+    public function bar(): string
+    {
+        return "some text here " ;
+    }
 }
